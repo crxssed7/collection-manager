@@ -2,7 +2,7 @@
 
 **QA Project - Tanveer Najib**
 
-A Simple project to allow the categorisation of media (books, movies, video games, music, etc).
+A simple project to allow the categorisation of media (books, movies, video games, music, etc).
 
 **Database Structure**
 

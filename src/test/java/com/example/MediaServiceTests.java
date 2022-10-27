@@ -21,16 +21,13 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
-public class MediaServiceTest {
+public class MediaServiceTests {
 	//This file tests the service layer for Media
 	@MockBean
 	private MediaRepository repo;
 	@Autowired
 	private MediaService service;
-	
-	//This is a test Media record
-	final Media TEST_SAVED_MEDIA = new Media(1L, "Ready Player One", "Ernest Cline", "Blurb of book", "https://google.com/", null, "1234556", 1, 1.99f, "This is the notes");
-	
+		
 	//Test the read by id functionality
 	@Test
 	void testReadById()
@@ -47,7 +44,7 @@ public class MediaServiceTest {
 	void testReadMedia()
 	{
 		List<Media> mediaList = new ArrayList<>();
-		mediaList.add(TEST_SAVED_MEDIA);
+		mediaList.add(new Media(1L, "Ready Player One", "Ernest Cline", "Blurb of book", "https://google.com/", null, "1234556", 1, 1.99f, "This is the notes"));
 		mediaList.add(new Media(2L, "Armada: A Novel", "Ernest Cline", "Blurb of book", "https://armada.com/", null, "47465467", 6, 11.99f, "Very cool sci-fi book!"));
 		given(repo.findAll()).willReturn(mediaList);
 		List<MediaDto> dto = service.readMedia();
@@ -78,6 +75,7 @@ public class MediaServiceTest {
 	@Test
 	void testUpdateMedia()
 	{
+		final Media TEST_SAVED_MEDIA = new Media(1L, "Ready Player One", "Ernest Cline", "Blurb of book", "https://google.com/", null, "1234556", 1, 1.99f, "This is the notes");
 		given(repo.save(any(Media.class))).willReturn(TEST_SAVED_MEDIA);
 		Media media = repo.save(TEST_SAVED_MEDIA);
 		assertThat(media).isNotNull();
