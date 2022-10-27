@@ -26,3 +26,17 @@ One MediaType can have many Media, however one Media can only have one MediaType
 ![erd](images/erd.png)
 
 **Endpoints**
+
+Media:
+- **GET** `media/read/{id}` - Reads specific media from the database with given id.
+- **GET** `media/read` - Reads all media in the database.
+- **POST** `media/create` - Adds a media to the database. You must include the field values in JSON format in the request body.
+- **DEL** `media/delete/{id}` - Deletes media with the given id if it exists in the database.
+- **PUT** `media/update/{id}` - Updates a specific media with the given id. You must include the fields in JSON format in the body.
+
+MediaType:
+- **GET** `mediatype/read/{id}` - Reads specific media type from the database with given id.
+- **GET** `mediatype/read` - Reads all media types in the database.
+- **POST** `mediatype/create` - Adds a media type to the database. You must include the field values in JSON format in the request body.
+- **DEL** `mediatype/delete/{id}` - Deletes a media type with the given id if it exists in the database.
+- **PUT** `mediatype/update/{id}` - Updates a specific media type with the given id. You must include the fields in JSON format in the body.
