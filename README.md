@@ -32,6 +32,13 @@ In the long run, I would like to add more database tables for further categorisa
 5. Run the project from within `SpringToolSuite`.
 6. Send requests to the API using an API client such as `Postman` or `Insomnia`.
 
+**Tools used**
+- Java
+- SpringBoot
+- Maven
+- MySQL
+- Git
+
 ## Documentation
 
 **Project Structure**
