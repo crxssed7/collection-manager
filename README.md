@@ -90,3 +90,17 @@ A Postman collection is available. You can use it to import the collection to yo
 ![delete media type](images/postman/deletemedia.png)
 
 **Tests**
+
+All tests are located in the [src/test/java/com/example](src/test/java/com/example) folder.
+
+*Media Type Service Tests*
+
+![media type service tests](images/tests/mediatypeservice.png)
+
+*Media Service Tests*
+
+![media service tests](images/tests/mediaservice.png)
+
+*Media Integration Tests*
+
+![media integration tests](images/tests/mediaintegration.png)
