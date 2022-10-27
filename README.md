@@ -2,7 +2,22 @@
 
 **QA Project - Tanveer Najib**
 
-A simple project to allow the categorisation of media (books, movies, video games, music, etc).
+A simple project to allow the categorisation of media (books, movies, video games, music, etc). This project only includes the backend, so there is no frontend code. It exposes data from a MySQL database in a RESTful manner.
+
+**Features**
+
+- Media table
+- Get media with id
+- Get all media in the database
+- Add media
+- Delete media
+- Update media
+- MediaType table
+- Get media type with id
+- Get all media type in the database
+- Add media type
+- Delete media type
+- Update media type
 
 **What could be improved?**
 
@@ -18,6 +33,10 @@ In the long run, I would like to add more database tables for further categorisa
 6. Send requests to the API using an API client such as `Postman` or `Insomnia`.
 
 ## Documentation
+
+**Project Structure**
+
+![structure](images/project.png)
 
 **Database Structure**
 
