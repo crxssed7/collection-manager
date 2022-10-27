@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "7a1a6acb-46a5-436c-acae-8382029bf4ea",
+		"name": "Collection Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Media Types",
+			"item": [
+				{
+					"name": "Add Media Type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Book\",\n\t\"universalIdType\": \"ISBN\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/mediatype/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mediatype",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Media Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mediatype/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mediatype",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Media Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mediatype/read/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mediatype",
+								"read",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Media Type",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Movie\",\n\t\"universalIdType\": \"EAN\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/mediatype/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mediatype",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Media Type",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/mediatype/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mediatype",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Media",
+			"item": [
+				{
+					"name": "Get Media",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/media/read/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"media",
+								"read",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Media",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/media/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"media",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Media",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ready Player One\",\n\t\"creators\": \"Ernest Cline\",\n\t\"description\": \"This is the blurb of the book\",\n\t\"image\": \"https://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg\",\n\t\"mediaType\": {\n\t\t\"id\": 2\n\t},\n\t\"copies\": 1,\n\t\"price\": 1.99,\n\t\"notes\": \"Really cool book notes etc\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/media/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"media",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Media",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/media/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"media",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Media",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ready Player One\",\n\t\"creators\": \"Steven Spielberg\",\n\t\"description\": \"This is the description of the movie\",\n\t\"image\": \"https://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg\",\n\t\"mediaType\": {\n\t\t\"id\": 3\n\t},\n    \"universalId\": \"2344365632\",\n\t\"copies\": 4,\n\t\"price\": 10.99,\n\t\"notes\": \"Really cool movie notes etc\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/media/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"media",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

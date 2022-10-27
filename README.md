@@ -40,3 +40,53 @@ MediaType:
 - **POST** `mediatype/create` - Adds a media type to the database. You must include the field values in JSON format in the request body.
 - **DEL** `mediatype/delete/{id}` - Deletes a media type with the given id if it exists in the database.
 - **PUT** `mediatype/update/{id}` - Updates a specific media type with the given id. You must include the fields in JSON format in the body.
+
+**Postman**
+
+A Postman collection is available. You can use it to import the collection to your Postman account: [Postman Collection](Collection-Manager.postman_collection.json)
+
+*Structure*
+
+![structure](images/postman/structure.png)
+
+*Add Media Type*
+
+![add media type](images/postman/addmediatype.png)
+
+*Get All Media Type*
+
+![get all media type](images/postman/getallmediatype.png)
+
+*Get Media Type*
+
+![get media type](images/postman/getmediatype.png)
+
+*Update Media Type*
+
+![update media type](images/postman/updatemediatype.png)
+
+*Delete Media Type*
+
+![delete media type](images/postman/deletemediatype.png)
+
+*Add Media*
+
+![add media type](images/postman/addmedia.png)
+
+*Get All Media*
+
+![get all media type](images/postman/getallmedia.png)
+
+*Get Media*
+
+![get media type](images/postman/getmedia.png)
+
+*Update Media*
+
+![update media type](images/postman/updatemedia.png)
+
+*Delete Media*
+
+![delete media type](images/postman/deletemedia.png)
+
+**Tests**
