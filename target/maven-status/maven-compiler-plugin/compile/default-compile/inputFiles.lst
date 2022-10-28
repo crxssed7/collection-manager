@@ -1,0 +1,14 @@
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/rest/dto/MediaDto.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/rest/controller/MediaTypeController.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/persistence/repository/MediaTypeRepository.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/exception/MediaNotFoundException.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/persistence/repository/MediaRepository.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/AppConfig.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/rest/dto/MediaTypeDto.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/CollectionManagerApplication.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/rest/controller/MediaController.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/persistence/domain/Media.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/exception/MediaTypeNotFoundException.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/persistence/domain/MediaType.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/service/MediaService.java
+/home/crxssed/eclipse-workspace/project/CollectionManager/src/main/java/com/example/service/MediaTypeService.java
